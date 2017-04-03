@@ -6,10 +6,10 @@ proxies = {
     'http':'http://127.0.0.1:3128',
     'https':'https://127.0.0.1:3128'
 }
-url = input('url: ')
+url = input('url (dejar vacío para especificar nombre y autor): ')
 if url == '':
-    author = input('author: ')
-    name = input('name: ')
+    author = input('autor: ')
+    name = input('nombre: ')
     url = 'https://marketplace.visualstudio.com/items?itemName='+author+'.'+name
 else:
     data = url.replace('https://marketplace.visualstudio.com/items?itemName=','').split('.')
